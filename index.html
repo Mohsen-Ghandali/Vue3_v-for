@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue.3</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Vue.3 - Widget </h1>
+      <h2>v-for</h2>
+      <ul v-for="user in users">
+        <li class="container" v-if="showContainer">
+          <h4><span>Username: </span>{{user.userName}}</h4>
+          <hr />
+          <p><span>Name: </span>{{user.name}}</p>
+          <p><span>Email:</span> {{user.email}}</p>
+          <p><span>Tel.:</span> {{user.tel}}</p>
+        </li>
+      </ul>
+
+      <div class="btnSh">
+        <div class="loader" v-show="!showContainer">
+          <img src="./loader.gif" alt="loader" />
+          <p>
+            Please press to show the user...
+          </p>
+        </div>
+        <button @click="hideBtn">
+          <span v-if="showContainer">Hide user</span>
+          <span v-else>Show user</span>
+          <!-- <span v-if="!showContainer">Show user</span> -->
+        </button>
+      </div>
+      <hr />
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
