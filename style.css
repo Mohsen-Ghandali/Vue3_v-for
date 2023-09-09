@@ -44,6 +44,12 @@ body {
   margin-top: 8px;
   color: #0056b3;
 }
+
+#app li.container img {
+width: 100px;
+margin-bottom: 10px;
+}
+
 #app  p{
   margin-bottom: 16px;
   color: #0056b3;

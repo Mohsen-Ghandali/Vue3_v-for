@@ -15,10 +15,12 @@
         <li class="container" v-if="showContainer">
           <h4><span>Username: </span>{{user.userName}}</h4>
           <hr />
+          <img :src="user.image" alt="userImage">
           <p><span>Name: </span>{{user.name}}</p>
           <p><span>Email:</span> {{user.email}}</p>
           <p><span>Tel.:</span> {{user.tel}}</p>
-          <a v-bind:href="user.link" target="_blank">Go to link</a><br><br>
+          <a v-bind:href="user.link" target="_blank">Go to link</a>
+          <br><br>
           <a :href="user.link" target="_blank">Go to link</a>
         </li>
       </ul>
