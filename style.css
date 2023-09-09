@@ -38,6 +38,13 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
+#app li.container div.flx{
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+gap: 3%;
+}
 
 #app li.container h4 {
   text-align: center;
@@ -46,8 +53,8 @@ body {
 }
 
 #app li.container img {
-width: 100px;
-margin-bottom: 10px;
+width: 30%;
+
 }
 
 #app  p{
